@@ -15,16 +15,17 @@ public class InventoryItem {
     public void printInventory(){
         int i=1;
         for(InventoryItem item:InventoryTracker.inventoryList){
-            System.out.println(i+". "+item.itemName+" "+item.itemQuant);
+            System.out.println(i+". "+"["+item.itemQuant+"] "+item.itemName);
             i++;
         }
     }
 
     public static void printOptions(){
         System.out.println("-----");
-        System.out.println("1. Create new item");
-        System.out.println("2. Enter item number to remove item");
-        System.out.println("3. Update item quantity");
+        System.out.println("Options");
+        System.out.println("[1] Create new item");
+        System.out.println("[2] Enter item number to remove item");
+        System.out.println("[3] Update item quantity");
     }
 
     public void addItem(){
